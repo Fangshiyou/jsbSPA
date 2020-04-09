@@ -10,7 +10,7 @@ module.exports=function(grunt){
             options: {
               csslintrc: '.csslintrc'
             },
-            src:'./fontbox/font.css'
+            src:'./fontBar/font.css'
         },
 
         htmlmin:{
@@ -24,12 +24,12 @@ module.exports=function(grunt){
             }
         },
         cssmin: {
-            'dist/css/font.css': 'fontbox/font.css'
+            'dist/css/font.css': 'fontBar/font.css'
         },
         uglify: {
           release:{
               files:{
-                 'dist/js/font.js': 'fontbox/font.js'   
+                 'dist/js/font.js': 'fontBar/font.js'   
               }
           }
         },

@@ -116,28 +116,8 @@ var $dlgMenu=$(html);
       $font.yclick()
       $font.sclick()
       $font.init()
-      // $font.getInfo()
     }
   }
-
-  function showAbout(){
-    var about=document.getElementById("about")
-    about.onclick=function(){
-      $dlgAbout.show()
-      $dlgAbout.dragmove()
-    }
-  }
-
-  function showGoto(){
-    var goto=document.getElementById("goto")
-    goto.onclick=function(){
-      $dlgGoto.show()
-      $dlgGoto.dragmove()
-      $dlgGoto.check()
-    }
-  }
-
-
   function txtClick(){
     var tex=document.getElementById("tex")
     var menus=document.getElementsByClassName('menus')
@@ -152,113 +132,8 @@ var $dlgMenu=$(html);
     show:show,
     menuClick:menuClick,
     showFont:showFont,
-    showAbout:showAbout,
-    showGoto:showGoto,
     txtClick:txtClick
   }
-
-
 }())
-  
-  // var titles=document.getElementsByClassName('title');
-  // var menus=document.getElementsByClassName('menus')
-  // var menubar=document.getElementsByClassName("notepad-menubar")[0]
-  // var num=1;
-
-  // function show(){
-  //   $(cfg.container).append($dlgMenu);
-  // }   
-  // function menuClick(){
-  //   for(var i=0;i<menus.length;i++){
-  //     var left=titles[i].offsetLeft
-  //     menus[i].style.marginLeft=left+'px';
-  //     menus[i].style.zIndex=i+10;
-  //     menus[i].style.display='none';
-  //     menus[i].index=i;
-  //     titles[i].index=i
-  //     titles[i].onclick=function(e){
-  //       if(num===0){
-  //         num=1;
-  //       }
-  //       else{
-  //         num=0
-  //       }
-  //       var te=e.target.index
-  //       menus[te].style.display="block";
-  //       for(var j=0;j<menus.length;j++){
-  //         if(j!==te){
-  //           menus[j].style.display='none';
-  //         }
-  //       }
-  //       if(num===0){
-  //         for(var j=0;j<titles.length;j++){
-  //           titles[j].onmouseover=function(e){
-  //             var te=e.target.index
-  //             menus[te].style.display="block";
-  //             for(var j=0;j<menus.length;j++){
-  //               if(j!==te){
-  //                 menus[j].style.display='none';
-  //               }
-  //             }
-  //           }
-  //         }
-  //       }
-  //       if(num===1){
-  //         for(var j=0;j<menus.length;j++){
-  //           menus[j].style.display='none';
-  //           titles[j].onmouseover=function(e){
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-  // menuClick();
-
-  // function showFont(){
-  //   var font=document.getElementById('font');
-  //   font.onclick=function(){
-  //     $font.show();
-  //     $font.dragmove();
-  //     $font.initcolor();
-  //     $font.fclick()
-  //     $font.yclick()
-  //     $font.sclick()
-  //     $font.init()
-  //     // $font.getInfo()
-  //   }
-  // }
-  // showFont();
-
-  // function showAbout(){
-  //   var about=document.getElementById("about")
-  //   about.onclick=function(){
-  //     $dlgAbout.show()
-  //     $dlgAbout.dragmove()
-  //   }
-  // }
-  // showAbout();
-
-  // function showGoto(){
-  //   var goto=document.getElementById("goto")
-  //   goto.onclick=function(){
-  //     $dlgGoto.show()
-  //     $dlgGoto.dragmove()
-  //     $dlgGoto.check()
-  //   }
-  // }
-  // showGoto();
-
-  // function txtClick(){
-  //   var tex=document.getElementById("tex")
-  //   var menus=document.getElementsByClassName('menus')
-  //   tex.onfocus=function(){
-  //     for(var i=0;i<menus.length;i++){
-  //       menus[i].style.display="none"
-  //     }
-  //   }
-  // }
-  // txtClick()
-
 
   
