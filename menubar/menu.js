@@ -54,12 +54,12 @@ var $menubar=(function(){
 '<div class="notepad-editor">'+
   '<textarea name="tex" id="tex"></textarea>'+
 '</div>'
-var $dlgMenu=$(html);
+var $dataMenu=$(html);
   var cfg = {
     container:'body',
   };
   function show(){
-    $(cfg.container).append($dlgMenu);
+    $(cfg.container).append($dataMenu);
   }   
   function menuClick(){
     for(var i=0;i<menus.length;i++){
